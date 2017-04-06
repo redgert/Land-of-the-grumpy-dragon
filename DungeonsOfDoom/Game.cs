@@ -23,9 +23,19 @@ namespace DungeonsOfDoom
             CreatePlayer();
             CreateWorld();
 
-            TextUtils.AnimateText("Welcome to the land of the grumpy Dragon...", 50);
-            Thread.Sleep(700);
-
+            "Welcome to the land of the grumpy Dragon...".AnimateText (50);
+            Thread.Sleep(1000);
+            Console.WriteLine("");
+            "You will take the role of Knight Night, a respected knight.".AnimateText(30);
+            Console.WriteLine("");
+            "You will have to save this land from all the monsters who is living here.".AnimateText(30);
+            Console.WriteLine("");
+            "Will you be able to slay the grumpy dragon?...".AnimateText(50);
+            Console.WriteLine("");
+            Thread.Sleep(500);
+            Console.WriteLine("Press any key to play");
+            Console.ReadKey();
+            
             do
             {
                 Console.Clear();
@@ -222,7 +232,10 @@ namespace DungeonsOfDoom
             Console.Clear();
             Console.WriteLine("Game over...");
             Console.WriteLine("You dead!");
+            Console.WriteLine("press any key to play again");
             Console.ReadKey();
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Black;
             Play();
         }
 

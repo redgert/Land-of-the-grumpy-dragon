@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Utils
 {
-    public class TextUtils
+    public static class TextUtils
     {
-        public static void AnimateText(string text, int delay)
+        public static void AnimateText(this string text, int delay)
         {
             foreach (var c in text)
             {
