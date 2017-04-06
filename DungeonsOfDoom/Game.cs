@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Utils;
+using DoD;
+using DoD.Creatures;
+using DoD.Items;
 
 namespace DungeonsOfDoom
 {
@@ -20,8 +23,8 @@ namespace DungeonsOfDoom
             CreatePlayer();
             CreateWorld();
 
-            TextUtils.AnimateText("Welcome to the land of the grumpy Dragon...", 70);
-            Thread.Sleep(1000);
+            TextUtils.AnimateText("Welcome to the land of the grumpy Dragon...", 50);
+            Thread.Sleep(700);
 
             do
             {

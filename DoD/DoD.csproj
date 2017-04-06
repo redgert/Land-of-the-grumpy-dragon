@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C454E2B-7B65-4800-A69A-3F3927F2EA40}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{A94F275C-1B18-47CC-B476-7293A1658B69}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DungeonsOfDoom</RootNamespace>
-    <AssemblyName>DungeonsOfDoom</AssemblyName>
+    <RootNamespace>DoD</RootNamespace>
+    <AssemblyName>DoD</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,18 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Creatures\Creature.cs" />
+    <Compile Include="Creatures\Dragon.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="IItem.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Creatures\Monster.cs" />
+    <Compile Include="Creatures\Ogre .cs" />
+    <Compile Include="Creatures\Orc.cs" />
+    <Compile Include="Creatures\Player.cs" />
+    <Compile Include="Items\Potion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="Creatures\Troll.cs" />
+    <Compile Include="Items\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DoD\DoD.csproj">
-      <Project>{a94f275c-1b18-47cc-b476-7293a1658b69}</Project>
-      <Name>DoD</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Utils\Utils.csproj">
       <Project>{a46ecf73-9b2f-41d5-b523-6c6ed7d759c0}</Project>
       <Name>Utils</Name>

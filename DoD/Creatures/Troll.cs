@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD.Creatures
 {
-    class Dragon : Monster, IItem
+    public class Troll: Monster, IItem
     {
-        public Dragon(int weight, string itemName) : base(200, 50, "Grumpy Dragon")
+        public Troll(int weight, string itemName) : base(70, 20, "Troll")
         {
             Weight = weight;
             ItemName = itemName;
         }
-
     }
 }

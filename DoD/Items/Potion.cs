@@ -1,12 +1,13 @@
-﻿using System;
+﻿using DoD.Creatures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD.Items
 {
-    class Potion : Item
+    public class Potion : Item
     {
         public Potion(string name, int weight, int health, string itemName) : base(name, weight, itemName)
         {

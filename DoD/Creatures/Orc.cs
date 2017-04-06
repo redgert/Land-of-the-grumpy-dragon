@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD.Creatures
 {
-    class Orc : Monster
+    public class Orc : Monster
     {
 
         public Orc(int weight, string itemName) : base(50, 10, "Orc")

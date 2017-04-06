@@ -1,12 +1,14 @@
-﻿using System;
+﻿using DoD.Creatures;
+using DoD.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD
 {
-    class Room
+    public class Room
     {
         public Monster Monster { get; set; }
         public Item Item { get; set; }

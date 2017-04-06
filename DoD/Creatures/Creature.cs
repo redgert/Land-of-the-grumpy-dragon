@@ -6,9 +6,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Utils;
 
-namespace DungeonsOfDoom
+namespace DoD.Creatures
 {
-    abstract class Creature : GameObject
+    public abstract class Creature : GameObject
     {
         public Creature(int health, int strength, string name, char icon) : base(name, icon)
         {
@@ -23,7 +23,6 @@ namespace DungeonsOfDoom
             if (!(this.Strength < 1))
             {
                 attackDmg = RandomUtils.GetRandom(0, Strength + 1);
-                //Thread.Sleep(rnd.Next(50,201));
             }
             else
             {

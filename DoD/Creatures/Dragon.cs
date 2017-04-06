@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DoD.Creatures
 {
-    class Ogre : Monster, IItem
+    public class Dragon : Monster, IItem
     {
-        public Ogre(int weight, string itemName) : base(60, 15, "Ogre")
+        public Dragon(int weight, string itemName) : base(200, 50, "Grumpy Dragon")
         {
             Weight = weight;
             ItemName = itemName;
